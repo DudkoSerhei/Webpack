@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack",
+    "start": "webpack --watch"
   },
   "repository": {
     "type": "git",
@@ -15,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/DudkoSerhei/Webpack/issues"
   },
-  "homepage": "https://github.com/DudkoSerhei/Webpack#readme"
+  "homepage": "https://github.com/DudkoSerhei/Webpack#readme",
+  "devDependencies": {
+    "webpack": "^3.8.1"
+  }
 }
