@@ -588,7 +588,7 @@ var App = function (_Component) {
         _react2.default.createElement(
           'h2',
           null,
-          'Hello world'
+          'Hello world!'
         )
       );
     }
