@@ -10,8 +10,15 @@ module.exports = {
    loaders: [
      {
        test: /.jsx?$/,
-       loader: 'babel-loader',
+       loader:'babel-loader',
        exclude: /node_modules/
+     },
+     {
+       test:/\.jsx?$/,
+       loaders: ['eslint-loader'],
+       include: [
+         path.resolve(__dirname, './src'),
+       ],
      },
      {
        test: /\.css$/,
@@ -25,15 +32,6 @@ module.exports = {
             options: {
               limit: 8192
             }
-          }
-        ]
-      },
-      {
-        test: /\.(png|jpg|gif)$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {}
           }
         ]
       }
