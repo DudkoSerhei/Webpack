@@ -16,7 +16,7 @@ module.exports = {
      },
      {
        test: /\.css$/,
-       loader: 'css-loader'
+       loader: 'style!css'
      },
      {
         test: /\.(png|jpg|gif)$/,
@@ -28,6 +28,10 @@ module.exports = {
             }
           }
         ]
+      },
+      {
+        test: /\.scss$/,
+        loader: 'style-loader!css-loader!autoprefixer-loader!sass-loader'
       }
     ]
   },
