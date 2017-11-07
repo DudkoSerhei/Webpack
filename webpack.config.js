@@ -10,15 +10,8 @@ module.exports = {
    loaders: [
      {
        test: /.jsx?$/,
-       loader:'babel-loader',
+       loader: [ 'babel-loader', 'eslint-loader' ],
        exclude: /node_modules/
-     },
-     {
-       test:/\.jsx?$/,
-       loaders: ['eslint-loader'],
-       include: [
-         path.resolve(__dirname, './src'),
-       ],
      },
      {
        test: /\.css$/,
