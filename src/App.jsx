@@ -1,8 +1,9 @@
 import React from 'react';
+import HelloWorld from './HelloWorld';
 
 const App = () => (
   <div>
-    <h2>Hello world!</h2>
+    <HelloWorld />
   </div>
 );
 
